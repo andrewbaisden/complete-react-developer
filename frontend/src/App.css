@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*,
+**::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	background-color: #15202b;
+}
+
+.container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 90rem;
+	width: 100%;
+	height: 100vh;
+}
+
+/* Sidebar Menu */
+.twitter-logo {
+	margin: 2rem 0 0 1rem;
+}
+
+.twitter-logo svg {
+	width: 2rem;
+}
+
+aside {
+	width: 10rem;
+	display: flex;
+	flex-flow: column nowrap;
+	position: fixed;
+	left: 12rem;
+}
+
+aside nav {
+	width: 10rem;
+}
+
+aside nav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: 600;
+	display: block;
+	padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+	width: 10rem;
+}
+
+aside nav a:hover {
+	background-color: rgb(38, 53, 68);
+	border-radius: 10rem;
+}
+
+aside nav div {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+aside nav svg {
+	width: 1.8rem;
+	margin-right: 1rem;
+}
+
+.tweet-button {
+	margin-top: 1rem;
+}
+
+.tweet-button button {
+	background: #1a8cd8;
+	border-radius: 5rem;
+	color: #ffffff;
+	padding: 0.8rem;
+	width: 14rem;
+	font-weight: 600;
+	font-size: 1.2rem;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.tweet-button button:hover {
+	background: #209aeb;
+}
+
+.twitter-profile-accounts {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin-top: 30rem;
+	width: 12rem;
+}
+
+.profile-picture {
+	border-radius: 100%;
+	background-color: #8480de;
+	height: 2.5rem;
+	width: 2.5rem;
+	margin-right: 0.5rem;
+}
+
+.twitter-profile-accounts-user h1 {
+	font-size: 1rem;
+	margin: 0rem;
+}
+
+.twitter-profile-accounts-user p {
+	color: rgb(139, 152, 165);
+	margin: 0rem;
+}
+
+.twitter-profile-accounts-menu {
+	margin-left: 1rem;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+/* Sidebar Content */
+article {
+	width: 24rem;
+	position: fixed;
+	right: 3rem;
+}
+
+.twitter-gallery {
+	display: flex;
+	flex-flow: row wrap;
+	width: 24rem;
+}
+
+.twitter-gallery-image {
+	border: 0.1rem solid black;
+	height: 5rem;
+	width: 7.6rem;
+	background-color: #b781b2;
+}
+
+.twitter-gallery-image-top-left-round {
+	border-top-left-radius: 1rem;
+}
+
+.twitter-gallery-image-top-right-round {
+	border-top-right-radius: 1rem;
+}
+
+.twitter-gallery-image-bottom-left-round {
+	border-bottom-left-radius: 1rem;
+}
+
+.twitter-gallery-image-bottom-right-round {
+	border-bottom-right-radius: 1rem;
+}
+
+form {
+	color: rgb(255, 255, 255);
+	display: flex;
+	padding: 2px;
+	border: 1px solid currentColor;
+	border-radius: 5px;
+	margin: 0 0 30px;
+}
+
+input[type='search'] {
+	border: none;
+	background: transparent;
+	margin: 0;
+	padding: 7px 8px;
+	font-size: 14px;
+	color: inherit;
+	border: 1px solid transparent;
+	border-radius: inherit;
+}
+
+input[type='search']::placeholder {
+	color: #bbb;
+}
+
+button[type='submit'] {
+	text-indent: -999px;
+	overflow: hidden;
+	width: 40px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	background: transparent
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+		no-repeat center;
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+button[type='submit']:hover {
+	opacity: 1;
+}
+
+button[type='submit']:focus,
+input[type='search']:focus {
+	box-shadow: 0 0 3px 0 #1183d6;
+	border-color: #1183d6;
+	outline: none;
+}
+
+form.nosubmit {
+	margin-top: 0.5rem;
+	border: none;
+	padding: 0;
+}
+
+input.nosubmit {
+	border: none;
+	border-radius: 4rem;
+	width: 100%;
+	padding: 1rem 3rem;
+	background: #273340
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+		no-repeat 13px center;
+}
+
+.you-might-like,
+.whats-happening {
+	margin-top: 1rem;
+	width: auto;
+	height: auto;
+	background: #1e2732;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	border-radius: 1rem;
+}
+
+.whats-happening > h1 {
+	margin: 2rem 0 2rem 1rem;
+	font-size: 1.5rem;
+}
+
+.you-might-like h1 {
+	font-size: 1.5rem;
+	margin: 1rem;
+}
+
+.you-might-like a,
+.whats-happening a {
+	text-decoration: none;
+	color: rgb(29, 155, 240);
+	display: block;
+	margin: 2rem 0 1rem 1rem;
+}
+
+.twitter-profile-accounts-users {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.twitter-profile-accounts-users h1 {
+	font-size: 1rem;
+	margin: 0rem;
+}
+
+.twitter-profile-accounts-users p {
+	color: rgb(139, 152, 165);
+	margin: 0rem;
+}
+
+.twitter-profile-accounts-users button {
+	border: none;
+	background: #ffffff;
+	color: #000000;
+	border-radius: 5rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	font-weight: 600;
+}
+
+.user-profile {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.twitter-trending h1 {
+	margin: 0 0 0 1rem;
+}
+
+.twitter-trending p {
+	margin: 0.5rem 0 0.5rem 1rem;
+	color: rgb(139, 152, 165);
+	font-size: 0.9rem;
+}
+
+.twitter-trending {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.twitter-trending:hover,
+.twitter-profile-accounts-users:hover {
+	background: #252e38;
+	cursor: pointer;
+}
+
+.twitter-trending-content-img {
+	background: #b982ae;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+}
+
+.twitter-footer-links {
+	margin-top: 1rem;
+}
+
+.twitter-footer-links nav a {
+	text-decoration: none;
+	color: rgb(139, 152, 165);
+	display: inline-block;
+	padding: 0.3rem;
+	font-size: 0.9rem;
+}
+
+.twitter-footer-links nav a:hover {
+	text-decoration: underline;
+}
+.twitter-footer-links p {
+	font-size: 0.9rem;
+	color: rgb(139, 152, 165);
+	margin: 0;
+}
+
+.twitter-messages {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	background: #15202b;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	box-shadow: 0px 0px 5px 0.1rem #2b3f51;
+	cursor: pointer;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	width: 22rem;
+}
+
+.twitter-messages-icons {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 4rem;
+}
+
+.twitter-messages svg {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+/* Main Twitter Content */
+main {
+	display: flex;
+	width: 40rem;
+	flex-flow: column nowrap;
+	height: auto;
+	border-left: 0.1rem solid rgb(46, 55, 64);
+	border-right: 0.1rem solid rgb(46, 55, 64);
+}
+
+.twitter-profile-main {
+	border-left: 0.1rem solid rgb(46, 55, 64);
+	border-right: 0.1rem solid rgb(46, 55, 64);
+}
+
+.twitter-profile-main-tweets {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	border-left: 0.1rem solid rgb(46, 55, 64);
+	border-right: 0.1rem solid rgb(46, 55, 64);
+	border-bottom: 0.1rem solid rgb(46, 55, 64);
+}
+
+.twitter-profile-main-tweets svg {
+	height: 3rem;
+	width: 1.5rem;
+	margin: 0 2rem 0 1rem;
+}
+
+.twitter-profile-main-tweets h1 {
+	margin: 1rem 0 0 0;
+	font-size: 1.4rem;
+}
+
+.twitter-profile-main-tweets p {
+	color: rgb(139, 152, 165);
+	margin: 0;
+}
+
+.twitter-profile-main-header {
+	background-color: #edf2fb;
+	height: 12.458rem;
+	width: auto;
+	margin-top: 0.5rem;
+}
+
+.profile-image-main {
+	background-color: #8480de;
+	height: 8rem;
+	width: 8rem;
+	border-radius: 100%;
+	border: 0.2rem solid black;
+	position: relative;
+	top: 8rem;
+	left: 1rem;
+}
+
+.twitter-profile-edit {
+	position: relative;
+	top: 5rem;
+	left: 32.5rem;
+}
+
+.twitter-profile-edit button {
+	background-color: #15202b;
+	color: #ffffff;
+	border: 0.01rem solid #919191;
+	border-radius: 2rem;
+	padding: 0.6rem;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.twitter-profile-main-name {
+	margin-top: 4rem;
+	padding: 1rem;
+}
+
+.twitter-profile-main-name h1,
+.twitter-profile-main-name p {
+	margin: 0;
+}
+
+.twitter-profile-main-name p {
+	color: rgb(139, 152, 165);
+}
+
+.twitter-profile-main-description {
+	padding: 0 1rem 0 1rem;
+}
+
+.twitter-profile-main-stats {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	color: rgb(139, 152, 165);
+	margin-left: 1rem;
+}
+
+.twitter-profile-main-stats div {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin: 0 0.2rem 0 0.2rem;
+}
+
+.twitter-profile-main-stats svg {
+	height: 1.2rem;
+	width: 1.2rem;
+	margin-right: 0.2rem;
+}
+
+.twitter-profile-main-stats a {
+	color: rgb(29, 155, 240);
+	text-decoration: none;
+}
+
+.twitter-profile-main-followers {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-left: 1rem;
+}
+
+.twitter-profile-main-followers p {
+	font-weight: 600;
+	margin: 0;
+}
+
+.twitter-profile-main-followers p span {
+	font-weight: 100;
+	color: rgb(139, 152, 165);
+}
+
+.twitter-following {
+	padding-right: 2rem;
+}
+
+.twitter-profile-main-navigation {
+	border-bottom: 0.1rem solid rgb(46, 55, 64);
+}
+
+.twitter-profile-main-navigation nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.twitter-profile-main-navigation nav a {
+	text-decoration: none;
+	font-weight: 600;
+	padding: 1rem;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.twitter-profile-main-navigation nav a:hover {
+	background: #2c3640;
+}
+
+.selected {
+	color: #ffffff;
+	border-bottom: 0.3rem solid #1a8cd8;
+}
+
+.unselected {
+	color: rgb(139, 152, 165);
+}
+
+.twitter-profile-picture-container {
+	height: 9rem;
+	padding: 0.5rem;
+}
+
+.twitter-profile-main-tweets-content {
+	width: 100%;
+}
+
+.twitter-profile-main-tweets-header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+.twitter-profile-main-tweets-header p {
+	color: #ffffff;
+	font-weight: 600;
+	margin-top: 1rem;
+}
+
+.twitter-profile-main-tweets-header p span {
+	color: rgb(139, 152, 165);
+	font-weight: normal;
+}
+
+.twitter-profile-main-tweets-post p {
+	margin-top: 0.3rem;
+	color: #ffffff;
+}
+
+.twitter-profile-main-tweets-header button {
+	margin-right: 1rem;
+	border: none;
+	background: none;
+	color: rgb(139, 152, 165);
+	cursor: pointer;
+	width: 4rem;
+}
+
+.twitter-profile-main-tweets-header button svg {
+	position: relative;
+	right: 0.2rem;
+	top: 0.1rem;
+}
+
+.twitter-profile-main-tweets-header button:hover {
+	background-color: #1c3345;
+	border-radius: 100%;
+	color: #1183d6;
+}
+
+.twitter-profile-main-tweets-social {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.twitter-profile-main-tweets-social div svg {
+	cursor: pointer;
+	margin-top: 0.5rem;
+	margin-left: 0;
+	height: 2rem;
+	width: 1.2rem;
+}
+
+/* Compose Tweet */
+.compose-tweet-container {
+	width: 37.5rem;
+	height: 17.375rem;
+	border-radius: 1rem;
+	background-color: #15202b;
+	border: 0.02rem solid white;
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 0.5rem;
+	position: absolute;
+	z-index: 1;
+	top: 2rem;
+	left: 38%;
+}
+.compose-tweet-profile {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+}
+
+.compose-tweet-profile button {
+	border: none;
+	background: none;
+	color: #ffffff;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.compose-tweet-content {
+	width: 100%;
+	margin-top: 2.2rem;
+}
+
+.compose-tweet-content form {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	border: none;
+}
+
+.compose-tweet-content textarea {
+	height: 10rem;
+	resize: none;
+	padding: 1rem;
+	background-color: #15202b;
+	border: none;
+	overflow: auto;
+	outline: none;
+	box-shadow: none;
+	color: #ffffff;
+	font-size: 1.3rem;
+}
+
+.compose-tweet-post {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	border-top: 0.01rem solid rgb(118, 118, 118);
+	padding-top: 1rem;
+}
+
+.compose-tweet-post input {
+	color: #ffffff;
+	background: #1a8cd8;
+	border: none;
+	font-weight: 600;
+	border-radius: 2rem;
+	padding: 0.5rem 1.3rem 0.5rem 1.3rem;
+	cursor: pointer;
+}
+
+.compose-tweet-post input:hover {
+	background: #209aeb;
+}

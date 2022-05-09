@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  # MongoDB services
+  mongo_db:
+    container_name: db_container
+    image: mongo:latest
+    restart: always
+    ports:
+      - 2717:27017
+    volumes:
+      - mongo_db:/data/db
+
+volumes:
+  mongo_db: {}

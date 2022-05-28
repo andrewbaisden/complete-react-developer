@@ -1,6 +1,6 @@
 # The Complete React Developer
 
-![https://res.cloudinary.com/d74fh3kw/image/upload/v1651922410/twitter_clone_app_gxv6jy.png](https://res.cloudinary.com/d74fh3kw/image/upload/v1651922410/twitter_clone_app_gxv6jy.png)
+![The Complete React Developer](/img/complete-react-developer.png)
 
 ## Setup
 

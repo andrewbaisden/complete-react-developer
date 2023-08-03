@@ -2,6 +2,14 @@
 
 ![The Complete React Developer](/img/complete-react-developer.png)
 
+## Reference material
+
+These articles have the tutorials and documentation for this codebase.
+
+[https://dev.to/livecycle/how-to-build-and-deploy-a-modern-day-nextjs-application-mgn](https://dev.to/livecycle/how-to-build-and-deploy-a-modern-day-nextjs-application-mgn)
+
+[https://andrewbaisden.hashnode.dev/the-complete-modern-react-developer-2022](https://andrewbaisden.hashnode.dev/the-complete-modern-react-developer-2022)
+
 ## Setup
 
 1. Start the Docker Desktop Application on your computer
